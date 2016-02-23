@@ -1,0 +1,94 @@
+@keyframes doot {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes swag {
+    from {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 0 -48px
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0
+    }
+
+    50% {
+        opacity: 0.0
+    }
+
+    100% {
+        opacity: 1.0
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        color: #00f6ff
+    }
+
+    25% {
+        color: #ff00ea
+    }
+
+    50% {
+        color: #00ff06
+    }
+
+    75% {
+        color: #fff600
+    }
+
+    100% {
+        color: #00f6ff
+    }
+}
+
+.fck-it
+{
+    border-radius: 5px;
+    border: none!important;
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    -moz-box-shadow: 0 0 5px #c6ff00;
+    -webkit-box-shadow: 0 0 5px #c6ff00;
+    box-shadow: 0px 0px 5px #c6ff00;
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 3px;
+    background: linear-gradient(270deg,#ff0000,#f9ff00,#18ff00,#00fff6,#0600ff,#ff00f5,#ff0000);
+    background-size: 800% 800%;
+    -webkit-box-shadow: 5px 5px 21px 0px rgba(235,9,9,1)!important;
+    -moz-box-shadow: 5px 5px 21px 0px rgba(235,9,9,1)!important;
+    box-shadow: 5px 5px 21px 0px rgba(235,9,9,1)!important;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: .5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation: doot 3s ease infinite,colorchange .6s initial infinite;
+    -moz-animation: doot 3s ease infinite,colorchange .6s linear infinite;
+    -o-animation: doot 3s ease infinite,colorchange .6s linear infinite;
+    animation: colorchange .6s infinite,doot 3s ease infinite;
+    z-index: 9999;
+}
